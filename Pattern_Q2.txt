@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+	int i,j,n;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+	    for(j=0;j<=i;j++)
+	    {
+	        printf("%d",j+1);
+	    }
+	    printf("\n");
+	}
+	return 0;
+}
+
+
+//input - 5
+
+//output - 
+//1
+//1
+//123
+//1234
+//12345
