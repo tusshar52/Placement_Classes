@@ -1,0 +1,30 @@
+#include <stdio.h>
+//Bubble Sort
+void display(int arr[],int n){
+    for(int i=0;i<n;i++){
+        printf("%d\n",arr[i]);
+    }
+}
+int main(void) {
+	int a[] = {8,6,7,9,2,6};
+	int i,j,n=6,t;
+	for(i=0;i<n;i++){
+	    for(j=0;j<n-i;j++){
+	        if(a[j]>a[j-1]){
+	            t = a[j];
+	            a[j] = a[j-1];
+	            a[j-1] = t;
+	        }
+	    }
+	}
+	display(a,n);
+	return 0;
+}
+
+//output - 
+//9
+//8
+//7
+//6
+//6
+//2
